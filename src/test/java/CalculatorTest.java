@@ -24,7 +24,6 @@ public class CalculatorTest {
     @Test
     public void testAddition() {
 
-        calculator = new Calculator();
         firstNumber = 10;
         secondNumber = 10;
 
@@ -35,7 +34,6 @@ public class CalculatorTest {
 
     @Test
     public void testSubtraction() {
-        calculator = new Calculator();
         firstNumber = 10;
         secondNumber = 10;
 
@@ -44,13 +42,11 @@ public class CalculatorTest {
     }
     @Test
     public void testMultiplication(){
-        calculator = new Calculator();
 
     }
 
     @Test
     public void testDivision() {
-        calculator = new Calculator();
         Exception exception = assertThrows(ArithmeticException.class, () ->
                 calculator.division(8, 0));
         assertEquals("division by zero", exception.getMessage());
